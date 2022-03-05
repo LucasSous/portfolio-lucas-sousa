@@ -1,6 +1,7 @@
 *{
     font-family:Arial, Helvetica, sans-serif;
 }
+
 body {
 	margin: 0; 
 	padding: 0;
@@ -10,14 +11,37 @@ body {
 	background-size: cover;
 	background-position: center center;
 }
+
+nav ul {
+    list-style: none;
+    position: fixed;
+    top: 0px;
+    right: 60px;
+    display: flex;
+    
+}
+
+nav li{
+    padding: 4px;
+    margin-left: 15px;
+    text-decoration:none;
+    color: #fff;
+    background-color: rgba(58, 58, 58, 0.479);
+    border-left: 3px solid rgb(255, 187, 0);
+}
+
+nav a{
+    text-decoration:none;
+    color: #fff;  
+}
+
 .presentation{
     background-image: linear-gradient(rgb(255, 187, 0),rgba(255, 187, 0, 0.712),rgba(136, 100, 0, 0.397),rgba(0, 0, 0, 0) );
-    height: 500px;
-    padding: 60px;
+    padding: 120px 60px 200px 60px;
 }
  .presentation p{
      width: 70%;
-     margin: 30px 0 0 0;
+     margin: 0;
      font-size: 3.5rem;
      padding-bottom: 40px;
      color: #fff;
@@ -30,22 +54,36 @@ body {
     margin-top: 8px;
     border-bottom: 3px solid #fff;
 }
-.declaration{
+#declaration{
     padding: 60px;
 }
 
-.declaration h1{
-    color: #fff;
-    font-size: 3rem;
-}
-.projects {
-    padding: 60px;
-}
-.projects h1{
+#declaration h1{
     color: rgb(255, 187, 0);
     font-size: 3rem;
 }
-.projects h2{
+#projects {
+    padding: 60px;
+}
+#projects h1{
+    color: rgb(255, 187, 0);
+    font-size: 3rem;
+}
+#projects h2{
+    color: #fff;
+    font-size: 2rem;
+}
+
+#historic{
+    padding: 60px; 
+}
+
+#historic h1{
+    color: rgb(255, 187, 0);
+    font-size: 3rem;
+}
+
+#historic h2{
     color: #fff;
     font-size: 2rem;
 }
