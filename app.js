@@ -1,4 +1,4 @@
-const menuItems = document.querySelectorAll('.menu a[href^="#"]');
+const menuItems = document.querySelectorAll('.scrollLinks a[href^="#"]');
 
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick)
@@ -34,7 +34,7 @@ function scrollToPosition(to){
     const distanceY = endY - startY;
     const startTime = new Date().getTime();
   
-    duration = typeof duration !== 'undefined' ? duration : 400;
+    duration = typeof duration !== 'undefined' ? duration : 1000;
   
     // Easing function
     const easeInOutQuart = (time, from, distance, duration) => {
