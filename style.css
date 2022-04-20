@@ -1,15 +1,18 @@
 *{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0; 
+	padding: 0;
+    box-sizing: border-box;
 }
 
+
 body {
-	margin: 0; 
-	padding: 0;
-    background-image: url(background.jpg);
+
+    background-image: url(background.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: center center;
+	background-position: center center; 
 }
 
 nav ul {
@@ -17,88 +20,138 @@ nav ul {
     position: fixed;
     top: 0px;
     right: 60px;
-    display: flex;
-    
 }
 
 nav li{
-    padding: 4px;
-    margin-left: 15px;
+    text-align: center;
     text-decoration:none;
-    color: #fff;
-    background-color: rgba(58, 58, 58, 0.479);
-    border-left: 3px solid rgb(255, 187, 0);
+    color: #000C18;
+    background-color: #ffdf2b;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+nav li:hover {
+    background-color: #c37b3c;
 }
 
 nav a{
     text-decoration:none;
-    color: #fff;  
+    color: #000C18;  
+    font-weight: 500;
+    padding: 4px 10px;
+    display: block;
 }
 
-#presentation{
-    background-image: linear-gradient(rgb(255, 187, 0),rgba(255, 187, 0, 0.712),rgba(136, 100, 0, 0.397),rgba(0, 0, 0, 0) );
-    padding: 120px 60px 200px 60px;
+#presentation {
+    background-color: #000C18;
 }
- #presentation p{
-     width: 70%;
-     margin: 0;
-     font-size: 3.5rem;
-     padding-bottom: 40px;
-     color: #fff;
-     font-weight:600;
-     border-bottom: 3px solid rgb(255, 255, 255);
 
- }
-.border{
-    width: 40%;
-    margin-top: 8px;
-    border-bottom: 3px solid #fff;
+#presentation img{
+    width: 100%;
 }
+
+.container-center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
 #declaration{
-    padding: 60px;
+    
+    background-color: #000C18;
 }
 
-#declaration h1{
-    color: rgb(255, 187, 0);
+.declaration-components{
+    padding: 200px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.img-declaration img{
+    width: 300px;
+}
+
+.text-declaration{
+    border-left: #fff solid 2px;
+    padding-left: 30px;
+}
+
+#declaration span{
+    color: #ffdf2b;
     font-size: 3rem;
 }
 #projects {
     padding: 60px;
 }
-#projects h1{
-    color: rgb(255, 187, 0);
-    font-size: 3rem;
+
+.project-card{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #ffffff15, #fffefe00);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+    transition: 1s;
 }
-#projects h2{
+
+.img-card{
+    background-color: #c37b3c;
+    border-radius: 100%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.img-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.project-card:hover {
+    background-color: #061d35;
+}
+
+#projects span{
+    color: #ffdf2b;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#projects .subtitle{
     color: #fff;
     font-size: 2rem;
+}
+
+#projects p {
+    margin-top: 15px;
 }
 
 #historic{
     padding: 60px; 
 }
 
-#historic h1{
-    color: rgb(255, 187, 0);
+#historic span{
+    color: #ffdf2b;
     font-size: 3rem;
 }
 
-#historic h2{
+#historic .subtitle{
     color: #fff;
     font-size: 2rem;
 }
 
 .text{
-    width: 70%;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .division{
     margin-left: 60px;
     width: 60%;
     height: 10px;
-    background-image: linear-gradient(to right,rgb(255, 187, 0),rgba(255, 187, 0, 0.712),rgba(255, 187, 0, 0.397),rgba(51, 49, 44, 0) );
+    background-image: linear-gradient(to right,#ffdf2b,rgba(255, 187, 0, 0.712),rgba(255, 187, 0, 0.397),rgba(51, 49, 44, 0) );
 }
 
 .goTop{
@@ -112,10 +165,10 @@ nav a{
    text-decoration: none;
    color: #fff;
    padding-bottom: 20px;
-   border-bottom: rgb(255, 187, 0) solid 2px; 
+   border-bottom: #ffdf2b solid 2px; 
 }
 
-#networks h1{
+#networks span{
     text-align: center;
     color: #fff;
     padding-top: 20px;
@@ -146,10 +199,10 @@ nav a{
 
 ::-webkit-scrollbar{
     width: 8px;
-    background-color: rgb(20, 20, 20);
+    background-color: #000C18;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(255, 187, 0);
+    background-color: #ffffff21;
     border-radius: 10px;
 }
 
@@ -160,7 +213,7 @@ nav a{
     }
 
     #presentation{
-        background-image: linear-gradient(rgb(255, 187, 0),rgba(255, 187, 0, 0.712),rgba(136, 100, 0, 0.397),rgba(0, 0, 0, 0) );
+        background-image: linear-gradient(#ffdf2b,rgba(255, 187, 0, 0.712),rgba(136, 100, 0, 0.397),rgba(0, 0, 0, 0) );
         padding: 60px 60px 100px 60px;
     }
 
@@ -174,7 +227,7 @@ nav a{
         border-bottom: 3px solid rgb(255, 255, 255);
     }
 
-    #networks h1{
+    #networks span{
         text-align: center;
         color: #fff;
         padding-top: 20px;
@@ -207,7 +260,7 @@ nav a{
     }
 
     #presentation{
-        background-image: linear-gradient(rgb(255, 187, 0),rgba(255, 187, 0, 0.712),rgba(136, 100, 0, 0.397),rgba(0, 0, 0, 0) );
+        background-image: linear-gradient(#ffdf2b,rgba(255, 187, 0, 0.712),rgba(136, 100, 0, 0.397),rgba(0, 0, 0, 0) );
         padding: 60px 30px 60px 30px;
     }
 
@@ -225,8 +278,8 @@ nav a{
         padding: 30px;
     }
 
-    #declaration h1{
-        color: rgb(255, 187, 0);
+    #declaration span{
+        color: #ffdf2b;
         font-size: 2rem;
     }
     
@@ -234,8 +287,8 @@ nav a{
         padding: 30px;
     }
 
-    #projects h1{
-        color: rgb(255, 187, 0);
+    #projects span{
+        color: #ffdf2b;
         font-size: 2rem;
     }
     #projects h2{
@@ -247,8 +300,8 @@ nav a{
         padding: 30px; 
     }
 
-    #historic h1{
-        color: rgb(255, 187, 0);
+    #historic span{
+        color: #ffdf2b;
         font-size: 2rem;
     }
     
@@ -261,10 +314,10 @@ nav a{
         margin-left: 30px;
         width: 60%;
         height: 7px;
-        background-image: linear-gradient(to right,rgb(255, 187, 0),rgba(255, 187, 0, 0.712),rgba(255, 187, 0, 0.397),rgba(51, 49, 44, 0) );
+        background-image: linear-gradient(to right,#ffdf2b,rgba(255, 187, 0, 0.712),rgba(255, 187, 0, 0.397),rgba(51, 49, 44, 0) );
     }
 
-    #networks h1{
+    #networks span{
         text-align: center;
         color: #fff;
         padding-top: 20px;
