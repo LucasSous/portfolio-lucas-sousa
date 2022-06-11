@@ -1,25 +1,24 @@
 const menuItems = document.querySelectorAll('.scrollLinks a[href^="#"]');
 
-menuItems.forEach(item => {
-    item.addEventListener('click', scrollToIdOnClick)
-})
+menuItems.forEach((item) => {
+  item.addEventListener('click', scrollToIdOnClick);
+});
 
-function getScrollTopByHref(element){
-    const id = element.getAttribute('href');
-    return document.querySelector(id).offsetTop;
+function getScrollTopByHref(element) {
+  const id = element.getAttribute('href');
+  return document.querySelector(id).offsetTop;
 }
 
-function scrollToIdOnClick(event){
-    event.preventDefault();
-    const to = getScrollTopByHref(event.target)
-    
-    scrollToPosition(to)
+function scrollToIdOnClick(event) {
+  event.preventDefault();
+  const to = getScrollTopByHref(event.target);
+
+  scrollToPosition(to);
 }
 
-function scrollToPosition(to){
-    smoothScrollTo(0, to)
+function scrollToPosition(to) {
+  smoothScrollTo(0, to);
 }
-
 
 /**
  * Smooth scroll animation
@@ -27,28 +26,36 @@ function scrollToPosition(to){
  * @param {int} endY: destination y coordinate
  * @param {int} duration: animation duration in ms
  */
- function smoothScrollTo(endX, endY, duration) {
-    const startX = window.scrollX || window.pageXOffset;
-    const startY = window.scrollY || window.pageYOffset;
-    const distanceX = endX - startX;
-    const distanceY = endY - startY;
-    const startTime = new Date().getTime();
-  
-    duration = typeof duration !== 'undefined' ? duration : 1000;
-  
-    // Easing function
-    const easeInOutQuart = (time, from, distance, duration) => {
-      if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-      return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
-    };
-  
-    const timer = setInterval(() => {
-      const time = new Date().getTime() - startTime;
-      const newX = easeInOutQuart(time, startX, distanceX, duration);
-      const newY = easeInOutQuart(time, startY, distanceY, duration);
-      if (time >= duration) {
-        clearInterval(timer);
-      }
-      window.scroll(newX, newY);
-    }, 1000 / 60); // 60 fps
+function smoothScrollTo(endX, endY, duration) {
+  const startX = window.scrollX || window.pageXOffset;
+  const startY = window.scrollY || window.pageYOffset;
+  const distanceX = endX - startX;
+  const distanceY = endY - startY;
+  const startTime = new Date().getTime();
+
+  duration = typeof duration !== 'undefined' ? duration : 1000;
+
+  // Easing function
+  const easeInOutQuart = (time, from, distance, duration) => {
+    if ((time /= duration / 2) < 1) return (distance / 2) * time * time * time * time + from;
+    return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
   };
+
+  const timer = setInterval(() => {
+    const time = new Date().getTime() - startTime;
+    const newX = easeInOutQuart(time, startX, distanceX, duration);
+    const newY = easeInOutQuart(time, startY, distanceY, duration);
+    if (time >= duration) {
+      clearInterval(timer);
+    }
+    window.scroll(newX, newY);
+  }, 1000 / 60); // 60 fps
+}
+
+(function () {
+  var menu = document.getElementById('menu');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 30) menu.classList.add('menuFixo');
+    else menu.classList.remove('menuFixo');
+  });
+})();
