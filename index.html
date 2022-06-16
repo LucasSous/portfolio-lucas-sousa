@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfólio Lucas Sousa</title>
   </head>
   <body>
@@ -13,6 +14,7 @@
       <ul id="menu">
         <li><a href="#declaration">Sobre Mim</a></li>
         <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#networks">Sociais</a></li>
       </ul>
     </nav>
@@ -24,17 +26,17 @@
     <main class="">
       <section id="declaration">
         <div class="container-center">
-          <div class="declaration-components">
+          <div class="declaration-components" data-aos="fade-up">
             <div class="img-declaration">
               <img src="./interrogacao.png" />
             </div>
             <div class="text-declaration">
               <span>Sobre Mim</span>
               <p class="text">
-                Sou desenvolvedor Web, técnico em informática e atualmente estou cursando Ciências da Computação na
-                instituição Unifametro. Possuo conhecimentos básicos em tecnologias de frontend e backend como Vue js e
-                Boot Strap. Sou uma pessoa muito focada em objetivos, sempre busco melhorias tanto para somar e ajudar a
-                quem está ao meu redor como para benefícios profissionais.
+                Sou desenvolvedor front end, técnico em informática e faço o curso de Ciências da Computação na
+                instituição Unifametro. Possuo conhecimentos básicos em tecnologias de frontend e backend como Vue js,
+                React js, Boot Strap, etc. Sou uma pessoa muito focada em objetivos, sempre busco melhorias tanto para
+                somar e ajudar a quem está ao meu redor como para benefícios profissionais.
               </p>
             </div>
           </div>
@@ -44,7 +46,7 @@
       <section id="projects">
         <div class="container-center">
           <span>Projetos</span>
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-right">
             <div class="img-card">
               <img src="./book.svg" />
             </div>
@@ -59,7 +61,7 @@
               </p>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-right">
             <div class="img-card">
               <img src="./computer.svg" />
             </div>
@@ -69,11 +71,13 @@
                 Sistema de locação de livros onde o principal intuito é o controle e gerenciamento de alugueis, nesse
                 sistema existem alguns cruds, como de clientes, livros, editoras e alugueis, também existe uma dashboard
                 na tela principal para ter uma visão geral do sistema. O sistema foi desenvolvido com os frameworks
-                SpringBoot e Vue JS e também foi utilizado o framework CSS Vuetify para estilização das telas.
+                SpringBoot e Vue JS e também foi utilizado o framework CSS Vuetify para estilização das telas. Obs: Este
+                projeto também foi feito com o React como treinamento para um projeto que fui alocado na empresa em que
+                trabalho.
               </p>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-right">
             <div class="img-card">
               <img src="./phone.svg" />
             </div>
@@ -85,6 +89,47 @@
                 utilizado para desenvolvimentos de aplicações mobile. O sistema ainda esta em desenvolvimento!
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="container-center">
+        <span>Habilidades</span>
+        <div class="skills-container" data-aos="fade-up">
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+            <p>
+              HTML é uma abreviação de Hypertext Markup Language, ou seja, Linguagem de Marcação de Hipertexto.
+              Resumindo, o HTML é uma linguagem usada para a publicação de conteúdo (texto, imagens, vídeos, áudio etc.)
+              na web.
+            </p>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+            <p>
+              CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para
+              personalização visual de um site.
+            </p>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            <p>
+              JavaScript é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais
+              conhecida como a linguagem de script para páginas Web.
+            </p>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+            <p>
+              Em poucas palavras, é uma biblioteca JavaScript para criação de interfaces para o usuário, desenvolvida e
+              mantida pelo Facebook.
+            </p>
+          </div>
+          <div class="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
+            <p>
+              O Vue.js (comumente conhecido como Vue, pronunciado "view") é um framework progressivo do JavaScript de
+              código aberto (open source) para a construção de interfaces de usuário.
+            </p>
           </div>
         </div>
       </section>
@@ -120,5 +165,9 @@
       </section>
     </main>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
