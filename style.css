@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(background.png);
+  background-image: url(images/background.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -89,10 +89,12 @@ nav a {
   padding-left: 30px;
 }
 
-#declaration span {
+.title {
   color: #ffdf2b;
   font-size: 3rem;
+  margin-bottom: 20px;
 }
+
 #projects {
   padding: 60px;
 }
@@ -124,23 +126,15 @@ nav a {
   background-color: #061d35;
 }
 
-#projects span {
-  color: #ffdf2b;
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
 #projects .subtitle {
   color: #fff;
   font-size: 2rem;
 }
 
-#projects p {
-  margin-top: 15px;
-}
-
 .text {
   color: rgb(200, 200, 200);
   font-size: 1.1rem;
+  margin-top: 15px;
 }
 
 .division {
@@ -158,12 +152,6 @@ nav a {
 
 #skills {
   padding: 40px;
-}
-
-#skills span {
-  color: #ffdf2b;
-  font-size: 3rem;
-  margin-bottom: 20px;
 }
 
 #skills .skills-container {
@@ -275,4 +263,92 @@ nav a {
 ::-webkit-scrollbar-thumb {
   background-color: #ffffff21;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .declaration-components {
+    padding: 100px 50px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .img-declaration img {
+    width: 100px;
+  }
+
+  #projects {
+    padding: 20px 0 0 0;
+  }
+
+  .img-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #projects .subtitle {
+    font-size: 1.2rem;
+  }
+
+  #skills {
+    padding: 40px 0 0 0;
+  }
+
+  #skills .skill {
+    font-size: 0.8rem;
+  }
+
+  #skills img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+
+  .text-declaration {
+    border-left: none;
+    padding-left: 0px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .img-declaration img {
+    display: none;
+  }
+
+  .img-card {
+    display: none;
+  }
+
+  #projects .subtitle {
+    font-size: 1.2rem;
+  }
+
+  #skills .skill {
+    font-size: 0.8rem;
+  }
+
+  #skills img {
+    width: 60px;
+    height: 60px;
+  }
 }
