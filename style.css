@@ -6,11 +6,11 @@
 }
 
 body {
-  /* background-image: url(images/background.png);
+  background-image: url(images/background.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center center; */
+  background-size: contain;
+  background-position: center center;
   background-color: #061d35;
 }
 
