@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfólio Lucas Sousa</title>
@@ -28,7 +28,7 @@
         <div class="container-center">
           <div class="declaration-components" data-aos="fade-up">
             <div class="img-declaration">
-              <img src="./images/interrogacao.png" />
+              <img src="./images/dev.png" />
             </div>
             <div class="text-declaration">
               <span class="title">Sobre Mim</span>
@@ -46,49 +46,23 @@
       <section id="projects">
         <div class="container-center">
           <span class="title">Projetos</span>
-          <div class="project-card" data-aos="fade-right">
-            <div class="img-card">
-              <img src="./images/book.svg" />
-            </div>
-            <div>
-              <span class="subtitle">Livraria - Frente de Loja (Aplicativo Web - Em andamento!)</span>
-              <p class="text">
-                Sistema que eu estava incluso, sendo um dos desenvolvedores web, atuando tanto no backend como no
-                frontend e utilizando os frameworks SpringBoot e Vue JS. Trata-se de um sistema que visa gerenciar uma
-                livraria, contendo cruds bem específicos, controle de acesso e regras de negócios bastante complexas.
-                Foi um ótimo projeto, pois me ajudou muito a conhecer e acompanhar de perto como é desenvolvido um
-                sistema profissional e me especializar ainda mais nesse imenso mundo da programação e gerenciamento de
-                projetos.
-              </p>
-            </div>
-          </div>
-          <div class="project-card" data-aos="fade-right">
-            <div class="img-card">
-              <img src="./images/computer.svg" />
-            </div>
-            <div>
+          <div class="project-cards" data-aos="fade-right">
+            <div class="project-card">
+              <video width="100%" src="videos/WDA-Livraria.mp4" autoplay muted loop></video>
               <span class="subtitle">Locadora de Livros (WEB)</span>
-              <p class="text">
-                Sistema de locação de livros onde o principal intuito é o controle e gerenciamento de alugueis, nesse
-                sistema existem alguns cruds, como de clientes, livros, editoras e alugueis, também existe uma dashboard
-                na tela principal para ter uma visão geral do sistema. O sistema foi desenvolvido com os frameworks
-                SpringBoot e Vue JS e também foi utilizado o framework CSS Vuetify para estilização das telas. Obs: Este
-                projeto também foi feito com o React como treinamento para um projeto que fui alocado na empresa em que
-                trabalho.
-              </p>
+              <div class="link-button">
+                <a href="https://wda-livraria.herokuapp.com/" target="_blank">Acessar aplicação</a>
+                <a href="https://github.com/LucasSous/Livraria-Front" target="_blank">Repositório</a>
+                <button class="btn open-modal-bookstory">Sobre</button>
+              </div>
             </div>
-          </div>
-          <div class="project-card" data-aos="fade-right">
-            <div class="img-card">
-              <img src="./images/phone.svg" />
-            </div>
-            <div>
+            <div class="project-card">
+              <video width="100%" src="" controls autoplay muted loop></video>
               <span class="subtitle">Locadora de Livros (Mobile)</span>
-              <p class="text">
-                Nesse sistema foi utilizado a mesma api que foi utilizada na locadora de livros (web), tendo o mesmo
-                intuito e as mesmas funcionalidades, porém esse sistema foi desenvolvido com um framework Flutter,
-                utilizado para desenvolvimentos de aplicações mobile. O sistema ainda esta em desenvolvimento!
-              </p>
+              <div class="link-button">
+                <a href="https://github.com/LucasSous/bookstore-flutter" target="_blank">Repositório</a>
+                <button class="btn open-modal-bookstory-mobile">Sobre</button>
+              </div>
             </div>
           </div>
         </div>
@@ -164,8 +138,38 @@
           </div>
         </div>
       </section>
+      <!-- Modais -->
+      <div class="modal-container bookstory">
+        <div class="modal modal-bookstory">
+          <div class="close-modal">
+            <button class="close-modal-bookstory">x</button>
+          </div>
+          <h1 class="modal-title">Locadora de livros (WEB)</h1>
+          <p class="modal-text">
+            Sistema de locação de livros onde o principal intuito é o controle e gerenciamento de alugueis, nesse
+            sistema existem alguns cruds, como de clientes, livros, editoras e alugueis, também existe uma dashboard na
+            tela principal para ter uma visão geral do sistema. O sistema foi desenvolvido com os frameworks SpringBoot
+            e Vue JS e também foi utilizado o framework CSS Vuetify para estilização das telas. Obs: Este projeto também
+            foi feito com o React como treinamento para um projeto que fui alocado na empresa em que trabalho.
+          </p>
+        </div>
+      </div>
+      <div class="modal-container bookstory-mobile">
+        <div class="modal modal-bookstory-mobile">
+          <div class="close-modal">
+            <button class="close-modal-bookstory-mobile">x</button>
+          </div>
+          <h1 class="modal-title">Locadora de livros (Mobile)</h1>
+          <p class="modal-text">
+            Nesse sistema foi utilizado a mesma api que foi utilizada na locadora de livros (web), tendo o mesmo intuito
+            e as mesmas funcionalidades, porém esse sistema foi desenvolvido com um framework Flutter, utilizado para
+            desenvolvimentos de aplicações mobile. O sistema ainda esta em desenvolvimento!
+          </p>
+        </div>
+      </div>
     </main>
-    <script src="app.js"></script>
+    <script src="smoothScroll.js"></script>
+    <script src="modal.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

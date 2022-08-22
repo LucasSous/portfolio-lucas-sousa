@@ -74,7 +74,7 @@ nav a {
 }
 
 .declaration-components {
-  padding: 200px 100px;
+  padding: 150px 100px;
   display: flex;
   align-items: center;
   transform: translateY(0px);
@@ -82,12 +82,11 @@ nav a {
 }
 
 .img-declaration img {
-  width: 300px;
+  width: 120%;
 }
 
 .text-declaration {
-  border-left: #fff solid 2px;
-  padding-left: 30px;
+  padding-left: 60px;
 }
 
 .title {
@@ -100,36 +99,108 @@ nav a {
   padding: 60px;
 }
 
-.project-card {
+.project-cards {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: 47%;
   background-color: #10121b;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 15px;
+  padding: 25px;
   border-radius: 12px;
-  margin: 10px 0;
-  transition: 1s;
-}
-
-.img-card {
-  background-color: #c37b3c;
-  border-radius: 100%;
-  padding: 20px;
-  margin-right: 20px;
-}
-
-.img-card img {
-  width: 100px;
-  height: 100px;
-}
-
-.project-card:hover {
-  background-color: #061d35;
+  margin: 10px 3% 0 0;
 }
 
 #projects .subtitle {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.3rem;
+}
+
+#projects .link-button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#projects .btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#projects .link-button a {
+  background-color: #ffffff2c;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: solid 1px gray;
+  cursor: pointer;
+}
+
+#projects .link-button a:hover {
+  border: solid 1px #fff;
+}
+
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.modal-show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: #10121b;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  max-width: 60%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.close-modal button {
+  background-color: #ffffff2c;
+  border: solid 1px gray;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.modal-title {
+  width: 100%;
+  color: rgb(200, 200, 200);
+  font-size: 1.5rem;
+}
+
+.modal-text {
+  color: rgb(200, 200, 200);
+  font-size: 1.1rem;
 }
 
 .text {
@@ -266,7 +337,7 @@ nav a {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   nav {
     display: none;
   }
@@ -284,16 +355,21 @@ nav a {
   }
 
   .img-declaration img {
-    width: 100px;
+    width: 120%;
   }
 
   #projects {
     padding: 20px 10px 0 10px;
   }
 
-  .img-card img {
-    width: 50px;
-    height: 50px;
+  .project-card {
+    width: 100%;
+    background-color: #10121b;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 10px 0;
+    margin-right: 3%;
   }
 
   #projects .subtitle {
@@ -326,6 +402,18 @@ nav a {
 
   .title {
     font-size: 2rem;
+  }
+
+  .modal {
+    max-width: 90%;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-text {
+    font-size: 0.9rem;
   }
 
   .text {
