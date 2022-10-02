@@ -10,15 +10,15 @@
     <title>Portfólio Lucas Sousa</title>
   </head>
   <body>
-    <nav class="scrollLinks">
-      <ul id="menu">
-        <li><a href="#declaration">Sobre Mim</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#networks">Sociais</a></li>
-      </ul>
-    </nav>
     <header>
+      <nav class="scrollLinks">
+        <ul id="menu">
+          <li><a href="#declaration">Sobre Mim</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#form">Contate-me</a></li>
+        </ul>
+      </nav>
       <section id="presentation">
         <img src="./images/banner.png" />
       </section>
@@ -68,45 +68,86 @@
         </div>
       </section>
       <section id="skills" class="container-center">
-        <span class="title">Habilidades</span>
         <div class="skills-container" data-aos="fade-up">
+          <span class="title" style="text-align: center">Habilidades</span>
           <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-            <p>
-              HTML é uma abreviação de Hypertext Markup Language, ou seja, Linguagem de Marcação de Hipertexto.
-              Resumindo, o HTML é uma linguagem usada para a publicação de conteúdo (texto, imagens, vídeos, áudio etc.)
-              na web.
-            </p>
+            <span> HTML </span>
+            <span> 80% </span>
+          </div>
+          <div class="column">
+            <div class="statistic" style="width: 80%"></div>
           </div>
           <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-            <p>
-              CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para
-              personalização visual de um site.
-            </p>
+            <span> CSS </span>
+            <span> 80% </span>
+          </div>
+          <div class="column">
+            <div class="statistic" style="width: 80%"></div>
           </div>
           <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-            <p>
-              JavaScript é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais
-              conhecida como a linguagem de script para páginas Web.
-            </p>
+            <span> Java Script </span>
+            <span> 50% </span>
+          </div>
+          <div class="column">
+            <div class="statistic" style="width: 50%"></div>
           </div>
           <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-            <p>
-              Em poucas palavras, é uma biblioteca JavaScript para criação de interfaces para o usuário, desenvolvida e
-              mantida pelo Facebook.
-            </p>
+            <span> React JS </span>
+            <span> 80% </span>
+          </div>
+          <div class="column">
+            <div class="statistic" style="width: 80%"></div>
           </div>
           <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
-            <p>
-              O Vue.js (comumente conhecido como Vue, pronunciado "view") é um framework progressivo do JavaScript de
-              código aberto (open source) para a construção de interfaces de usuário.
-            </p>
+            <span> Vue JS </span>
+            <span> 60% </span>
+          </div>
+          <div class="column">
+            <div class="statistic" style="width: 60%"></div>
+          </div>
+          <div class="skill">
+            <span> Flutter </span>
+            <span> 50% </span>
+          </div>
+          <div class="column">
+            <div class="statistic" style="width: 50%"></div>
+          </div>
+          <div class="skill">
+            <span> Git </span>
+            <span> 70% </span>
+          </div>
+          <div class="column">
+            <div class="statistic" style="width: 70%"></div>
           </div>
         </div>
+      </section>
+      <section id="form" class="container-center">
+        <span class="title" style="text-align: center">Contate-me</span>
+        <form action="https://formspree.io/f/xqkjbppg" method="POST" target="_parent" accept-charset="utf-8">
+          <label for="name">Nome*</label><br />
+          <input
+            class="text-field"
+            type="name"
+            name="name"
+            id="name"
+            placeholder="Digite seu nome"
+            autocomplete="off"
+            required
+          /><br />
+          <label for="email">E-mail*</label><br />
+          <input
+            class="text-field"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            autocomplete="off"
+            required
+          /><br />
+          <label for="message">Conteúdo*</label><br />
+          <textarea class="text-field" name="message" id="message" rows="3" required></textarea><br />
+          <button type="submit">Enviar</button>
+        </form>
       </section>
       <div class="scrollLinks">
         <div class="goTop">
@@ -116,7 +157,6 @@
       <section id="networks">
         <div class="container-center">
           <div class="container">
-            <span>Redes Sociais</span>
             <div class="cards">
               <div>
                 <a href="https://www.instagram.com/luccassousa_13/" target="_blank"
@@ -138,6 +178,7 @@
           </div>
         </div>
       </section>
+
       <!-- Modais -->
       <div class="modal-container bookstory">
         <div class="modal modal-bookstory">
