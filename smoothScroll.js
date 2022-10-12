@@ -51,11 +51,3 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 }
-
-(function () {
-  var menu = document.getElementById('menu');
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 30) menu.classList.add('menuFixo');
-    else menu.classList.remove('menuFixo');
-  });
-})();

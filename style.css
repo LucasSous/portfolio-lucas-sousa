@@ -6,55 +6,61 @@
 }
 
 html {
-  background-color: #010c18;
+  background-image: url('./images/banner.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  background-color: #000;
 }
 
 nav ul {
   list-style: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  width: 100%;
-  padding: 10px;
-  transition: 0.4s;
-}
-
-.menuFixo {
-  background-color: #000c18;
-  z-index: 2;
-}
-
-nav li {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  transition: 0.4s;
-  margin-left: 10px;
-}
-
-nav li:hover {
-  background-color: #c37b3c;
 }
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   font-weight: 500;
-  padding: 4px 10px;
-  display: block;
+  width: 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
-#apresentation {
+nav a:hover {
+  font-weight: bold;
+}
+
+#presentation {
   display: flex;
   justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
+  padding-left: 100px;
 }
 
-#presentation img {
-  width: 100%;
+#presentation div h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: -20px;
+  cursor: default;
 }
+
+#presentation div h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+/* #presentation img {
+  width: 100%;
+} */
 
 .container-center {
   display: flex;
@@ -63,10 +69,6 @@ nav a {
   justify-content: center;
   margin: 0 auto;
   padding: 0 2%;
-}
-
-#declaration {
-  background-color: #000c18;
 }
 
 .declaration-components {
@@ -87,8 +89,10 @@ nav a {
 
 .title {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  cursor: default;
 }
 
 #projects {
@@ -104,7 +108,7 @@ nav a {
 
 .project-card {
   width: 47%;
-  background-color: #10121b;
+  background-color: #0d0d0d;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 25px;
   border-radius: 12px;
@@ -114,6 +118,7 @@ nav a {
 #projects .subtitle {
   color: #fff;
   font-size: 1.3rem;
+  cursor: default;
 }
 
 #projects .link-button {
@@ -167,7 +172,7 @@ nav a {
 }
 
 .modal {
-  background-color: #10121b;
+  background-color: #0d0d0d;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -192,17 +197,20 @@ nav a {
   width: 100%;
   color: rgb(200, 200, 200);
   font-size: 1.5rem;
+  cursor: default;
 }
 
 .modal-text {
   color: rgb(200, 200, 200);
   font-size: 1.1rem;
+  cursor: default;
 }
 
 .text {
   color: rgb(200, 200, 200);
   font-size: 1.1rem;
   margin-top: 15px;
+  cursor: default;
 }
 
 .division {
@@ -228,6 +236,7 @@ nav a {
   flex-direction: column;
   color: #fff;
   width: 100%;
+  cursor: default;
 }
 
 .skill {
@@ -237,8 +246,8 @@ nav a {
 }
 
 .column {
-  height: 10px;
-  background-color: #10121b;
+  height: 7px;
+  background-color: #0d0d0d;
   width: 100%;
   border-radius: 20px;
   margin: 10px 0;
@@ -269,7 +278,7 @@ form label {
 }
 
 form .text-field {
-  background-color: #1b1d28;
+  background-color: #101010;
   border: none;
   width: 100%;
   margin: 10px 0px;
@@ -280,23 +289,26 @@ form .text-field {
 
 form .text-field:focus {
   outline: none;
-  background-color: #3c3e4a;
+  background-color: #1d1d1d;
 }
 
 form button {
-  background-color: #c37b3c;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
   border-radius: 4px;
   margin-top: 10px;
   font-size: 17px;
   cursor: pointer;
   transition: all 0.4s;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 form button:hover {
-  background-color: #8f5a2c;
+  border: 1px solid #c37b3c;
+  color: #c37b3c;
 }
 
 @keyframes float {
@@ -357,7 +369,7 @@ form button:hover {
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #000c18;
+  background-color: #000;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #ffffff21;
@@ -395,8 +407,6 @@ form button:hover {
 
   .project-card {
     width: 100%;
-    background-color: #10121b;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     padding: 25px;
     border-radius: 12px;
     margin: 10px 0;
