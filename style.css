@@ -6,54 +6,74 @@
 }
 
 html {
-  background-color: #010c18;
+  background-image: url('./images/banner.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  background-color: #000;
 }
 
 nav ul {
   list-style: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  width: 100%;
-  padding: 10px;
-  transition: 0.4s;
-}
-
-.menuFixo {
-  background-color: #000c18;
-  z-index: 2;
-}
-
-nav li {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  transition: 0.4s;
-  margin-left: 10px;
-}
-
-nav li:hover {
-  background-color: #c37b3c;
 }
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   font-weight: 500;
-  padding: 4px 10px;
-  display: block;
+  width: 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
-#apresentation {
+nav a:hover {
+  font-weight: bold;
+}
+
+#presentation {
   display: flex;
   justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  height: 100vh;
+  gap: 50px;
+  padding-left: 100px;
 }
 
-#presentation img {
-  width: 100%;
+#presentation div h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: -20px;
+  cursor: default;
+}
+
+#presentation div h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.presentation-buttom {
+  margin-top: 25px;
+}
+
+.presentation-buttom a {
+  text-decoration: none;
+  color: #c37b3c;
+  background-color: #000;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#presentation-mobile {
+  display: none;
 }
 
 .container-center {
@@ -66,7 +86,10 @@ nav a {
 }
 
 #declaration {
-  background-color: #000c18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .declaration-components {
@@ -74,7 +97,6 @@ nav a {
   display: flex;
   align-items: center;
   transform: translateY(0px);
-  animation: float 5s ease-in-out infinite;
 }
 
 .img-declaration img {
@@ -87,8 +109,10 @@ nav a {
 
 .title {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  cursor: default;
 }
 
 #projects {
@@ -103,17 +127,28 @@ nav a {
 }
 
 .project-card {
-  width: 47%;
-  background-color: #10121b;
+  width: 30%;
+  background-color: #0d0d0d;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 25px;
   border-radius: 12px;
   margin: 10px 3% 0 0;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  background-color: #171717;
+  cursor: pointer;
+  z-index: 999;
 }
 
 #projects .subtitle {
   color: #fff;
   font-size: 1.3rem;
+  cursor: default;
 }
 
 #projects .link-button {
@@ -123,13 +158,6 @@ nav a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-}
-
-#projects .btn {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
 }
 
 #projects .link-button a {
@@ -146,6 +174,22 @@ nav a {
   border: solid 1px #fff;
 }
 
+.repository-buttom {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.repository-buttom:hover {
+  border-color: #c37b3c;
+  color: #c37b3c;
+}
+
 .modal-container {
   position: fixed;
   width: 100%;
@@ -159,6 +203,7 @@ nav a {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s;
+  z-index: 1000;
 }
 
 .modal-show {
@@ -167,7 +212,7 @@ nav a {
 }
 
 .modal {
-  background-color: #10121b;
+  background-color: #171717;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -192,33 +237,24 @@ nav a {
   width: 100%;
   color: rgb(200, 200, 200);
   font-size: 1.5rem;
+  cursor: default;
 }
 
 .modal-text {
   color: rgb(200, 200, 200);
   font-size: 1.1rem;
+  cursor: default;
 }
 
 .text {
   color: rgb(200, 200, 200);
   font-size: 1.1rem;
   margin-top: 15px;
-}
-
-.division {
-  margin-left: 60px;
-  width: 60%;
-  height: 10px;
-  background-image: linear-gradient(
-    to right,
-    #ffdf2b,
-    rgba(255, 187, 0, 0.712),
-    rgba(255, 187, 0, 0.397),
-    rgba(51, 49, 44, 0)
-  );
+  cursor: default;
 }
 
 #skills {
+  min-height: 100vh;
   padding: 40px 150px;
 }
 
@@ -228,6 +264,7 @@ nav a {
   flex-direction: column;
   color: #fff;
   width: 100%;
+  cursor: default;
 }
 
 .skill {
@@ -237,8 +274,8 @@ nav a {
 }
 
 .column {
-  height: 10px;
-  background-color: #10121b;
+  height: 7px;
+  background-color: #0d0d0d;
   width: 100%;
   border-radius: 20px;
   margin: 10px 0;
@@ -269,7 +306,7 @@ form label {
 }
 
 form .text-field {
-  background-color: #1b1d28;
+  background-color: #101010;
   border: none;
   width: 100%;
   margin: 10px 0px;
@@ -280,23 +317,26 @@ form .text-field {
 
 form .text-field:focus {
   outline: none;
-  background-color: #3c3e4a;
+  background-color: #1d1d1d;
 }
 
 form button {
-  background-color: #c37b3c;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
   border-radius: 4px;
   margin-top: 10px;
   font-size: 17px;
   cursor: pointer;
   transition: all 0.4s;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 form button:hover {
-  background-color: #8f5a2c;
+  border: 1px solid #c37b3c;
+  color: #c37b3c;
 }
 
 @keyframes float {
@@ -321,54 +361,26 @@ form button:hover {
 .goTop a {
   text-decoration: none;
   color: #fff;
-  padding-bottom: 20px;
-  border-bottom: #ffdf2b solid 2px;
-}
-
-#networks {
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.cards div {
-  padding: 10px;
-}
-
-.cards div a img {
-  width: 30px;
-  height: 30px;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-}
-
-.cards div a img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  padding-bottom: 10px;
+  border-bottom: #c37b3c solid 2px;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: #000c18;
+  background-color: #000;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #ffffff21;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 820px) {
-  nav {
-    display: none;
+@media screen and (max-width: 1100px) {
+  .project-card {
+    width: 47%;
   }
+}
 
+@media screen and (max-width: 820px) {
   .declaration-components {
     padding: 100px 50px;
   }
@@ -395,12 +407,14 @@ form button:hover {
 
   .project-card {
     width: 100%;
-    background-color: #10121b;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 25px;
-    border-radius: 12px;
     margin: 10px 0;
     margin-right: 3%;
+  }
+
+  .project-card:hover {
+    -webkit-transform: none;
+    transform: none;
+    z-index: 0;
   }
 
   #projects .subtitle {
@@ -418,23 +432,63 @@ form button:hover {
   #form {
     padding: 60px 20px;
   }
-
-  #networks {
-    padding: 0px;
-    position: relative;
-  }
-
-  .cards {
-    flex-direction: row;
-  }
-
-  .cards div a img {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 @media screen and (max-width: 500px) {
+  #presentation {
+    display: none;
+  }
+
+  #presentation-mobile {
+    display: block;
+    background-color: #c37b3c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #presentation-mobile div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #presentation-mobile div img {
+    width: 70%;
+    animation: float 5s ease-in-out infinite;
+  }
+
+  #presentation-mobile h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: -10px;
+    cursor: default;
+  }
+
+  #presentation-mobile h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: default;
+  }
+
+  #presentation-mobile span {
+    font-size: 3rem;
+  }
+
+  nav li {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav li a {
+    font-size: 1.1rem;
+  }
+
   .text-declaration {
     border-left: none;
     padding-left: 0px;

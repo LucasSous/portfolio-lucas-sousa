@@ -14,6 +14,12 @@ const buttonCloseModalBookstoryMobile = getElement('.close-modal-bookstory-mobil
 const containerBookstoryMobile = getElement('.bookstory-mobile');
 const modalBookstoryMobile = getElement('.modal-bookstory-mobile');
 
+// Modal Pokedex
+const buttonModalPokedex = getElement('.open-modal-pokedex');
+const buttonCloseModalPokedex = getElement('.close-modal-pokedex');
+const containerPokedex = getElement('.pokedex');
+const modalPokedex = getElement('.modal-pokedex');
+
 const openModal = (param) => {
   param.classList.add(activeModalClass);
 };
@@ -48,4 +54,18 @@ containerBookstoryMobile.addEventListener('click', (e) => {
 
 buttonCloseModalBookstoryMobile.addEventListener('click', () => {
   closeModal(containerBookstoryMobile);
+});
+
+// Modal Pokedex
+buttonModalPokedex.addEventListener('click', () => {
+  openModal(containerPokedex);
+});
+
+containerPokedex.addEventListener('click', (e) => {
+  if (modalPokedex.contains(e.target)) return;
+  closeModal(containerPokedex);
+});
+
+buttonCloseModalPokedex.addEventListener('click', () => {
+  closeModal(containerPokedex);
 });
