@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lucas Sousa" />
+    <meta name="description" content="Portifólio do desenvolvedor front-end Lucas Sousa" />
+    <meta name="keywords" content="portifolio, html, css, javascript, front-end, desenvolvimento" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,10 +18,13 @@
   </head>
   <body>
     <header>
-      <section id="presentation" class="container-center">
+      <section id="presentation" class="container-center" data-aos="fade-up">
         <div>
           <h1>Lucas Sousa</h1>
           <h2>Desenvolvedor Front-End</h2>
+          <div class="presentation-buttom">
+            <a href="https://www.linkedin.com/in/lucas-sousa-1a9625235/" target="_blank"> Linkedin</a>
+          </div>
         </div>
         <nav class="scrollLinks">
           <ul>
@@ -34,6 +40,9 @@
           <img src="./images/eu.png" />
           <h1>Lucas Sousa</h1>
           <h2>Desenvolvedor Front-End</h2>
+          <div class="presentation-buttom">
+            <a href="https://www.linkedin.com/in/lucas-sousa-1a9625235/" target="_blank"> Linkedin</a>
+          </div>
         </div>
         <nav class="scrollLinks">
           <ul>
@@ -56,10 +65,11 @@
             <div class="text-declaration">
               <span class="title">Sobre Mim</span>
               <p class="text">
-                Sou desenvolvedor front end, técnico em informática e faço o curso de Ciências da Computação na
-                instituição Unifametro. Possuo conhecimentos básicos em tecnologias de frontend e backend como Vue js,
-                React js, Boot Strap, etc. Sou uma pessoa muito focada em objetivos, sempre busco melhorias tanto para
-                somar e ajudar a quem está ao meu redor como para benefícios profissionais.
+                Sou desenvolvedor front-end, técnico de informática e estou fazendo o curso de ciência da computação na
+                instituição Unifametro. Tenho conhecimentos em tecnologias de desenvolvimento como Vue js, React js,
+                Flutter, Boot Strap, etc. Sou muito focado em objetivos, sempre em busca de melhorias, novas
+                experiências e aprendizados, tanto para somar e ajudar a quem está ao meu redor como para benefícios
+                profissionais.
               </p>
             </div>
           </div>
@@ -70,24 +80,25 @@
         <div class="container-center">
           <span class="title">Projetos</span>
           <div class="project-cards" data-aos="fade-right">
-            <div class="project-card">
+            <div class="project-card open-modal-pokedex">
+              <video width="100%" src="videos/pokedex.mp4" autoplay muted loop></video>
+              <span class="subtitle">Pokedex - Vue js</span>
+            </div>
+            <div class="project-card open-modal-bookstory">
               <video width="100%" src="videos/WDA-Livraria.mp4" autoplay muted loop></video>
               <span class="subtitle">Locadora de Livros (WEB)</span>
               <div class="link-button">
                 <a href="https://wda-livraria.herokuapp.com/" target="_blank">Acessar aplicação</a>
-                <a href="https://github.com/LucasSous/Livraria-Front" target="_blank">Repositório</a>
-                <button class="btn open-modal-bookstory">Sobre</button>
               </div>
             </div>
-            <div class="project-card">
+            <div class="project-card open-modal-bookstory-mobile">
               <video width="100%" src="" controls autoplay muted loop></video>
               <span class="subtitle">Locadora de Livros (Mobile)</span>
-              <div class="link-button">
-                <a href="https://github.com/LucasSous/bookstore-flutter" target="_blank">Repositório</a>
-                <button class="btn open-modal-bookstory-mobile">Sobre</button>
-              </div>
             </div>
           </div>
+          <a href="https://github.com/LucasSous?tab=repositories" target="_blank" class="repository-buttom"
+            >Repositórios</a
+          >
         </div>
       </section>
       <section id="skills" class="container-center">
@@ -172,30 +183,6 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
-      <section id="networks">
-        <div class="container-center">
-          <div class="container">
-            <div class="cards">
-              <div>
-                <a href="https://www.instagram.com/luccassousa_13/" target="_blank"
-                  ><img src="./images/instagran.png"
-                /></a>
-              </div>
-              <div>
-                <a href="mailto:lucassousadasilva333@gmail.com" target="_blank"><img src="./images/email.png" /></a>
-              </div>
-              <div>
-                <a href="https://www.linkedin.com/in/lucas-sousa-1a9625235/" target="_blank"
-                  ><img src="./images/linkedin.png"
-                /></a>
-              </div>
-              <div>
-                <a href="https://github.com/LucasSous" target="_blank"><img src="./images/github.png" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <div class="scrollLinks">
         <div class="goTop">
           <a href="#topo">Voltar ao topo</a>
@@ -228,6 +215,18 @@
             Nesse sistema foi utilizado a mesma api que foi utilizada na locadora de livros (web), tendo o mesmo intuito
             e as mesmas funcionalidades, porém esse sistema foi desenvolvido com um framework Flutter, utilizado para
             desenvolvimentos de aplicações mobile. O sistema ainda esta em desenvolvimento!
+          </p>
+        </div>
+      </div>
+      <div class="modal-container pokedex">
+        <div class="modal modal-pokedex">
+          <div class="close-modal">
+            <button class="close-modal-pokedex">x</button>
+          </div>
+          <h1 class="modal-title">Pokedex</h1>
+          <p class="modal-text">
+            Aplicação bem simples de uma pokedex feita com o framework Vue JS. Possue funcionalidades de listagem e
+            pesquisa de Pokemons.
           </p>
         </div>
       </div>

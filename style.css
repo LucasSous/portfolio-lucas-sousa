@@ -40,7 +40,7 @@ nav a:hover {
   align-items: left;
   flex-direction: column;
   height: 100vh;
-  gap: 20px;
+  gap: 50px;
   padding-left: 100px;
 }
 
@@ -56,6 +56,20 @@ nav a:hover {
   font-weight: 500;
   text-transform: uppercase;
   cursor: default;
+}
+
+.presentation-buttom {
+  margin-top: 25px;
+}
+
+.presentation-buttom a {
+  text-decoration: none;
+  color: #c37b3c;
+  background-color: #000;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #presentation-mobile {
@@ -83,7 +97,6 @@ nav a:hover {
   display: flex;
   align-items: center;
   transform: translateY(0px);
-  /* animation: float 5s ease-in-out infinite; */
 }
 
 .img-declaration img {
@@ -103,7 +116,6 @@ nav a:hover {
 }
 
 #projects {
-  min-height: 100vh;
   padding: 60px;
 }
 
@@ -115,12 +127,22 @@ nav a:hover {
 }
 
 .project-card {
-  width: 47%;
+  width: 30%;
   background-color: #0d0d0d;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 25px;
   border-radius: 12px;
   margin: 10px 3% 0 0;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  background-color: #171717;
+  cursor: pointer;
+  z-index: 999;
 }
 
 #projects .subtitle {
@@ -138,13 +160,6 @@ nav a:hover {
   gap: 10px;
 }
 
-#projects .btn {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
 #projects .link-button a {
   background-color: #ffffff2c;
   padding: 5px 10px;
@@ -157,6 +172,22 @@ nav a:hover {
 
 #projects .link-button a:hover {
   border: solid 1px #fff;
+}
+
+.repository-buttom {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.repository-buttom:hover {
+  border-color: #c37b3c;
+  color: #c37b3c;
 }
 
 .modal-container {
@@ -172,6 +203,7 @@ nav a:hover {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s;
+  z-index: 1000;
 }
 
 .modal-show {
@@ -180,7 +212,7 @@ nav a:hover {
 }
 
 .modal {
-  background-color: #0d0d0d;
+  background-color: #171717;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -333,33 +365,6 @@ form button:hover {
   border-bottom: #c37b3c solid 2px;
 }
 
-#networks {
-  padding: 20px;
-}
-
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.cards div {
-  padding: 10px;
-}
-
-.cards div a img {
-  width: 20px;
-  height: 20px;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-}
-
-.cards div a img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #000;
@@ -367,6 +372,12 @@ form button:hover {
 ::-webkit-scrollbar-thumb {
   background-color: #ffffff21;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .project-card {
+    width: 47%;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -396,10 +407,14 @@ form button:hover {
 
   .project-card {
     width: 100%;
-    padding: 25px;
-    border-radius: 12px;
     margin: 10px 0;
     margin-right: 3%;
+  }
+
+  .project-card:hover {
+    -webkit-transform: none;
+    transform: none;
+    z-index: 0;
   }
 
   #projects .subtitle {
@@ -416,11 +431,6 @@ form button:hover {
 
   #form {
     padding: 60px 20px;
-  }
-
-  #networks {
-    padding: 0px;
-    position: relative;
   }
 }
 
