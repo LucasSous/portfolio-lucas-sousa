@@ -80,20 +80,22 @@
         <div class="container-center">
           <span class="title">Projetos</span>
           <div class="project-cards" data-aos="fade-right">
+            <div class="project-card open-modal-bookstory-mobile">
+              <div style="display: flex; justify-content: center; margin-bottom: 10px">
+                <video height="200px" src="videos/bookstoreFlutter.mp4" controls autoplay muted loop></video><br />
+              </div>
+              <span class="subtitle">Locadora de Livros - Flutter</span>
+            </div>
             <div class="project-card open-modal-pokedex">
               <video width="100%" src="videos/pokedex.mp4" autoplay muted loop></video>
               <span class="subtitle">Pokedex - Vue js</span>
             </div>
             <div class="project-card open-modal-bookstory">
               <video width="100%" src="videos/WDA-Livraria.mp4" autoplay muted loop></video>
-              <span class="subtitle">Locadora de Livros (WEB)</span>
+              <span class="subtitle">Locadora de Livros - Vue js</span>
               <div class="link-button">
                 <a href="https://wda-livraria.herokuapp.com/" target="_blank">Acessar aplicação</a>
               </div>
-            </div>
-            <div class="project-card open-modal-bookstory-mobile">
-              <video width="100%" src="" controls autoplay muted loop></video>
-              <span class="subtitle">Locadora de Livros (Mobile)</span>
             </div>
           </div>
           <a href="https://github.com/LucasSous?tab=repositories" target="_blank" class="repository-buttom"
@@ -190,21 +192,6 @@
       </div>
 
       <!-- Modais -->
-      <div class="modal-container bookstory">
-        <div class="modal modal-bookstory">
-          <div class="close-modal">
-            <button class="close-modal-bookstory">x</button>
-          </div>
-          <h1 class="modal-title">Locadora de livros (WEB)</h1>
-          <p class="modal-text">
-            Sistema de locação de livros onde o principal intuito é o controle e gerenciamento de alugueis, nesse
-            sistema existem alguns cruds, como de clientes, livros, editoras e alugueis, também existe uma dashboard na
-            tela principal para ter uma visão geral do sistema. O sistema foi desenvolvido com os frameworks SpringBoot
-            e Vue JS e também foi utilizado o framework CSS Vuetify para estilização das telas. Obs: Este projeto também
-            foi feito com o React como treinamento para um projeto que fui alocado na empresa em que trabalho.
-          </p>
-        </div>
-      </div>
       <div class="modal-container bookstory-mobile">
         <div class="modal modal-bookstory-mobile">
           <div class="close-modal">
@@ -212,9 +199,9 @@
           </div>
           <h1 class="modal-title">Locadora de livros (Mobile)</h1>
           <p class="modal-text">
-            Nesse sistema foi utilizado a mesma api que foi utilizada na locadora de livros (web), tendo o mesmo intuito
-            e as mesmas funcionalidades, porém esse sistema foi desenvolvido com um framework Flutter, utilizado para
-            desenvolvimentos de aplicações mobile. O sistema ainda esta em desenvolvimento!
+            Sistema mobile desenvolvido com Flutter. O sistema é uma locadora de livros e possue funções de listagem,
+            cadastro, edição e deleção de entidades. Possue também uma dashboard que mostra as informações gerais da
+            locadora.
           </p>
         </div>
       </div>
@@ -227,6 +214,21 @@
           <p class="modal-text">
             Aplicação bem simples de uma pokedex feita com o framework Vue JS. Possue funcionalidades de listagem e
             pesquisa de Pokemons.
+          </p>
+        </div>
+      </div>
+      <div class="modal-container bookstory">
+        <div class="modal modal-bookstory">
+          <div class="close-modal">
+            <button class="close-modal-bookstory">x</button>
+          </div>
+          <h1 class="modal-title">Locadora de livros (WEB)</h1>
+          <p class="modal-text">
+            Sistema de locação de livros onde o principal intuito é o controle e gerenciamento de alugueis, nesse
+            sistema existem alguns cruds, como de clientes, livros, editoras e alugueis, também existe uma dashboard na
+            tela principal para ter uma visão geral do sistema. O sistema foi desenvolvido com os frameworks SpringBoot
+            e Vue JS e também foi utilizado o framework CSS Vuetify para estilização das telas. Obs: Este projeto também
+            foi feito com o React como treinamento para um projeto que fui alocado na empresa em que trabalho.
           </p>
         </div>
       </div>
