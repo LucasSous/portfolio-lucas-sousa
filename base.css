@@ -1,0 +1,15 @@
+:root {
+  --color-primary: #c37b3c;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey: #c8c8c8;
+  --color-dark-grey: #0d0d0d;
+  --color-dark-grey-hover: #171717;
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
