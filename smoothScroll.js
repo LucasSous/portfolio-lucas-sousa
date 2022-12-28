@@ -1,4 +1,5 @@
 const menuItems = document.querySelectorAll('.scrollLinks a[href^="#"]');
+const goTop = document.querySelector('.goTop');
 
 menuItems.forEach((item) => {
   item.addEventListener('click', scrollToIdOnClick);
@@ -50,4 +51,16 @@ function smoothScrollTo(endX, endY, duration) {
     }
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
+}
+
+window.onscroll = function () {
+  showGoTop();
+};
+
+function showGoTop() {
+  if (window.pageYOffset > 50) {
+    goTop.style.opacity = 1;
+  } else {
+    goTop.style.opacity = 0;
+  }
 }
