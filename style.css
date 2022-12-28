@@ -63,6 +63,12 @@ nav a:hover {
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+.presentation-buttom a:hover {
+  /* background-color: var(--color-dark-grey-hover); */
+  box-shadow: 0 0 15px #0000005f;
 }
 
 #presentation-mobile {
@@ -345,17 +351,30 @@ form button:hover {
 }
 
 .goTop {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  padding: 50px 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  background-color: var(--color-dark-grey);
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.goTop:hover {
+  background-color: var(--color-dark-grey-hover);
+  box-shadow: 0px 0px 15px #0000005f;
 }
 
 .goTop a {
   text-decoration: none;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   color: var(--color-white);
-  padding-bottom: 10px;
-  border-bottom: var(--color-primary) solid 2px;
 }
 
 ::-webkit-scrollbar {
