@@ -175,18 +175,14 @@ nav a:hover {
 
 .repository-buttom {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-black);
   padding: 10px 20px;
   margin-top: 50px;
-  border: 1px solid var(--color-white);
+  background-color: var(--color-primary);
+  font-weight: bold;
   border-radius: 4px;
   text-transform: uppercase;
   transition: all 0.5s ease;
-}
-
-.repository-buttom:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
 }
 
 .modal-container {
@@ -321,21 +317,14 @@ form .text-field:focus {
 
 form button {
   padding: 10px 20px;
-  border: 1px solid var(--color-white);
-  background-color: transparent;
-  color: var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--color-black);
   border-radius: 4px;
   margin-top: 10px;
   font-size: 17px;
   cursor: pointer;
-  transition: all 0.4s;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
-}
-
-form button:hover {
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
 }
 
 @keyframes float {
