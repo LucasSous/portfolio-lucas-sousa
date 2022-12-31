@@ -8,8 +8,8 @@
     <meta name="description" content="Portifólio do desenvolvedor front-end Lucas Sousa" />
     <meta name="keywords" content="portifolio, html, css, javascript, front-end, desenvolvimento" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="base.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -18,225 +18,226 @@
     <title>Portfólio Lucas Sousa</title>
   </head>
   <body>
-    <header>
-      <section id="presentation" class="container-center" data-aos="fade-up">
-        <div>
-          <h1>Lucas Sousa</h1>
-          <h2>Desenvolvedor Front-End</h2>
-          <div class="presentation-buttom">
-            <a href="https://www.linkedin.com/in/lucas-sousa-1a9625235/" target="_blank"> Linkedin</a>
+    <div class="smooth-scroll-wrapper">
+      <header>
+        <section id="presentation" class="container-center" data-aos="fade-up">
+          <div>
+            <h1>Lucas Sousa</h1>
+            <h2>Um Desenvolvedor Front-End</h2>
+            <div class="presentation-buttom">
+              <a href="https://www.linkedin.com/in/lucas-sousa-1a9625235/" target="_blank"> Linkedin</a>
+            </div>
           </div>
-        </div>
-        <nav class="scrollLinks">
-          <ul>
-            <li><a href="#declaration">Sobre Mim</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#form">Contate-me</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section id="presentation-mobile">
-        <div>
-          <img src="./images/eu.png" />
-          <h1>Lucas Sousa</h1>
-          <h2>Desenvolvedor Front-End</h2>
-          <div class="presentation-buttom">
-            <a href="https://www.linkedin.com/in/lucas-sousa-1a9625235/" target="_blank"> Linkedin</a>
+          <nav class="scrollLinks">
+            <ul>
+              <li><a href="#declaration">Sobre Mim</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#form">Contate-me</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section id="presentation-mobile">
+          <div>
+            <img src="./images/eu.png" />
+            <h1>Lucas Sousa</h1>
+            <h2>Desenvolvedor Front-End</h2>
+            <div class="presentation-buttom">
+              <a href="https://www.linkedin.com/in/lucas-sousa-1a9625235/" target="_blank"> Linkedin</a>
+            </div>
           </div>
-        </div>
-        <nav class="scrollLinks">
-          <ul>
-            <li><a href="#declaration">Sobre Mim</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#form">Contate-me</a></li>
-          </ul>
-        </nav>
-        <span class="material-symbols-outlined"> keyboard_double_arrow_down </span>
-      </section>
-    </header>
-    <main>
-      <section id="declaration">
-        <div class="container-center">
-          <div class="declaration-components" data-aos="fade-up">
-            <!-- <div class="img-declaration">
+          <nav class="scrollLinks">
+            <ul>
+              <li><a href="#declaration">Sobre Mim</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#form">Contate-me</a></li>
+            </ul>
+          </nav>
+          <span class="material-symbols-outlined"> keyboard_double_arrow_down </span>
+        </section>
+      </header>
+      <main>
+        <section id="declaration">
+          <div class="container-center">
+            <div class="declaration-components" data-aos="fade-up">
+              <!-- <div class="img-declaration">
               <img src="./images/dev.png" />
             </div> -->
-            <div class="text-declaration">
-              <span class="title">Sobre Mim</span>
-              <p class="text">
-                Sou desenvolvedor front-end, técnico de informática e estou fazendo o curso de ciência da computação na
-                instituição Unifametro. Tenho conhecimentos em tecnologias de desenvolvimento como Vue js, React js,
-                Flutter, Boot Strap, etc. Sou muito focado em objetivos, sempre em busca de melhorias, novas
-                experiências e aprendizados, tanto para somar e ajudar a quem está ao meu redor como para benefícios
-                profissionais.
-              </p>
+              <div class="text-declaration">
+                <span class="title">Sobre Mim</span>
+                <p class="text">
+                  Sou desenvolvedor Front-End, Técnico em Informática e estou cursando Ciências da Computação na
+                  instituição Unifametro. Tenho conhecimentos em Vue js, React js, Flutter, etc. Sou muito focado em
+                  objetivos, sempre em busca de melhorias, novas experiências, aprendizados, e muitos desafios para me
+                  superar cada vez mais e melhorar como profissional...
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="projects">
-        <div class="container-center">
-          <span class="title">Projetos</span>
-          <div class="project-cards" data-aos="fade-right">
-            <div class="project-card open-modal-bookstory-mobile">
-              <div style="display: flex; justify-content: center; margin-bottom: 10px">
-                <video height="200px" src="videos/bookstoreFlutter.mp4" controls autoplay muted loop></video><br />
+        <section id="projects">
+          <div class="container-center">
+            <span class="title">Projetos</span>
+            <div class="project-cards">
+              <div class="project-card open-modal-bookstory-mobile">
+                <div style="display: flex; justify-content: center; margin-bottom: 10px">
+                  <video height="200px" src="videos/bookstoreFlutter.mp4" controls autoplay muted loop></video><br />
+                </div>
+                <span class="subtitle">Locadora de Livros - Flutter</span>
               </div>
-              <span class="subtitle">Locadora de Livros - Flutter</span>
-            </div>
-            <div class="project-card open-modal-pokedex">
-              <video width="100%" src="videos/pokedex.mp4" autoplay muted loop></video>
-              <span class="subtitle">Pokedex - Vue js</span>
-            </div>
-            <div class="project-card open-modal-bookstory">
-              <video width="100%" src="videos/WDA-Livraria.mp4" autoplay muted loop></video>
-              <span class="subtitle">Locadora de Livros - Vue js</span>
-              <!-- <div class="link-button">
+              <div class="project-card open-modal-pokedex">
+                <video width="100%" src="videos/pokedex.mp4" autoplay muted loop></video>
+                <span class="subtitle">Pokedex - Vue js</span>
+              </div>
+              <div class="project-card open-modal-bookstory">
+                <video width="100%" src="videos/WDA-Livraria.mp4" autoplay muted loop></video>
+                <span class="subtitle">Locadora de Livros - Vue js</span>
+                <!-- <div class="link-button">
 >>>>>>> Stashed changes
                 <a href="https://wda-livraria.herokuapp.com/" target="_blank">Acessar aplicação</a>
               </div> -->
+              </div>
+            </div>
+            <a href="https://github.com/LucasSous?tab=repositories" target="_blank" class="repository-button"
+              >Repositórios</a
+            >
+          </div>
+        </section>
+        <section id="skills" class="container-center">
+          <div class="skills-container">
+            <span class="title" style="text-align: center">Habilidades</span>
+            <div class="skill">
+              <span> HTML </span>
+              <span> 80% </span>
+            </div>
+            <div class="column">
+              <div class="statistic" style="width: 80%"></div>
+            </div>
+            <div class="skill">
+              <span> CSS </span>
+              <span> 80% </span>
+            </div>
+            <div class="column">
+              <div class="statistic" style="width: 80%"></div>
+            </div>
+            <div class="skill">
+              <span> Java Script </span>
+              <span> 50% </span>
+            </div>
+            <div class="column">
+              <div class="statistic" style="width: 50%"></div>
+            </div>
+            <div class="skill">
+              <span> React JS </span>
+              <span> 80% </span>
+            </div>
+            <div class="column">
+              <div class="statistic" style="width: 80%"></div>
+            </div>
+            <div class="skill">
+              <span> Vue JS </span>
+              <span> 60% </span>
+            </div>
+            <div class="column">
+              <div class="statistic" style="width: 60%"></div>
+            </div>
+            <div class="skill">
+              <span> Flutter </span>
+              <span> 50% </span>
+            </div>
+            <div class="column">
+              <div class="statistic" style="width: 50%"></div>
+            </div>
+            <div class="skill">
+              <span> Git </span>
+              <span> 70% </span>
+            </div>
+            <div class="column">
+              <div class="statistic" style="width: 70%"></div>
             </div>
           </div>
-          <a href="https://github.com/LucasSous?tab=repositories" target="_blank" class="repository-buttom"
-            >Repositórios</a
-          >
+        </section>
+        <section id="form" class="container-center">
+          <span class="title" style="text-align: center">Contate-me</span>
+          <form action="https://formspree.io/f/xqkjbppg" method="POST" target="_parent" accept-charset="utf-8">
+            <label for="name">Nome</label><br />
+            <input
+              class="text-field"
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Digite seu nome"
+              autocomplete="off"
+              required
+            /><br />
+            <label for="email">E-mail</label><br />
+            <input
+              class="text-field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              autocomplete="off"
+              required
+            /><br />
+            <label for="message">Conteúdo</label><br />
+            <textarea class="text-field" name="message" id="message" rows="3" required></textarea><br />
+            <button class="form-button" type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <!-- Modais -->
+    <div class="modal-container bookstory-mobile">
+      <div class="modal modal-bookstory-mobile">
+        <div class="close-modal">
+          <button class="close-modal-bookstory-mobile">x</button>
         </div>
-      </section>
-      <section id="skills" class="container-center">
-        <div class="skills-container" data-aos="fade-up">
-          <span class="title" style="text-align: center">Habilidades</span>
-          <div class="skill">
-            <span> HTML </span>
-            <span> 80% </span>
-          </div>
-          <div class="column">
-            <div class="statistic" style="width: 80%"></div>
-          </div>
-          <div class="skill">
-            <span> CSS </span>
-            <span> 80% </span>
-          </div>
-          <div class="column">
-            <div class="statistic" style="width: 80%"></div>
-          </div>
-          <div class="skill">
-            <span> Java Script </span>
-            <span> 50% </span>
-          </div>
-          <div class="column">
-            <div class="statistic" style="width: 50%"></div>
-          </div>
-          <div class="skill">
-            <span> React JS </span>
-            <span> 80% </span>
-          </div>
-          <div class="column">
-            <div class="statistic" style="width: 80%"></div>
-          </div>
-          <div class="skill">
-            <span> Vue JS </span>
-            <span> 60% </span>
-          </div>
-          <div class="column">
-            <div class="statistic" style="width: 60%"></div>
-          </div>
-          <div class="skill">
-            <span> Flutter </span>
-            <span> 50% </span>
-          </div>
-          <div class="column">
-            <div class="statistic" style="width: 50%"></div>
-          </div>
-          <div class="skill">
-            <span> Git </span>
-            <span> 70% </span>
-          </div>
-          <div class="column">
-            <div class="statistic" style="width: 70%"></div>
-          </div>
-        </div>
-      </section>
-      <section id="form" class="container-center">
-        <span class="title" style="text-align: center">Contate-me</span>
-        <form action="https://formspree.io/f/xqkjbppg" method="POST" target="_parent" accept-charset="utf-8">
-          <label for="name">Nome</label><br />
-          <input
-            class="text-field"
-            type="name"
-            name="name"
-            id="name"
-            placeholder="Digite seu nome"
-            autocomplete="off"
-            required
-          /><br />
-          <label for="email">E-mail</label><br />
-          <input
-            class="text-field"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Digite seu e-mail"
-            autocomplete="off"
-            required
-          /><br />
-          <label for="message">Conteúdo</label><br />
-          <textarea class="text-field" name="message" id="message" rows="3" required></textarea><br />
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-      <div class="scrollLinks">
-        <div class="goTop">
-          <a href="#topo" class="material-symbols-outlined">arrow_upward</a>
-        </div>
+        <h1 class="modal-title">Locadora de livros (Mobile)</h1>
+        <p class="modal-text">
+          Sistema mobile desenvolvido com Flutter. O sistema é uma locadora de livros e possue funções de listagem,
+          cadastro, edição e deleção de entidades. Possue também uma dashboard que mostra as informações gerais da
+          locadora.
+        </p>
       </div>
-
-      <!-- Modais -->
-      <div class="modal-container bookstory-mobile">
-        <div class="modal modal-bookstory-mobile">
-          <div class="close-modal">
-            <button class="close-modal-bookstory-mobile">x</button>
-          </div>
-          <h1 class="modal-title">Locadora de livros (Mobile)</h1>
-          <p class="modal-text">
-            Sistema mobile desenvolvido com Flutter. O sistema é uma locadora de livros e possue funções de listagem,
-            cadastro, edição e deleção de entidades. Possue também uma dashboard que mostra as informações gerais da
-            locadora.
-          </p>
+    </div>
+    <div class="modal-container pokedex">
+      <div class="modal modal-pokedex">
+        <div class="close-modal">
+          <button class="close-modal-pokedex">x</button>
         </div>
+        <h1 class="modal-title">Pokedex</h1>
+        <p class="modal-text">
+          Aplicação bem simples de uma pokedex feita com o framework Vue JS. Possue funcionalidades de listagem e
+          pesquisa de Pokemons.
+        </p>
       </div>
-      <div class="modal-container pokedex">
-        <div class="modal modal-pokedex">
-          <div class="close-modal">
-            <button class="close-modal-pokedex">x</button>
-          </div>
-          <h1 class="modal-title">Pokedex</h1>
-          <p class="modal-text">
-            Aplicação bem simples de uma pokedex feita com o framework Vue JS. Possue funcionalidades de listagem e
-            pesquisa de Pokemons.
-          </p>
+    </div>
+    <div class="modal-container bookstory">
+      <div class="modal modal-bookstory">
+        <div class="close-modal">
+          <button class="close-modal-bookstory">x</button>
         </div>
+        <h1 class="modal-title">Locadora de livros (WEB)</h1>
+        <p class="modal-text">
+          Sistema de locação de livros onde o principal intuito é o controle e gerenciamento de alugueis, nesse sistema
+          existem alguns cruds, como de clientes, livros, editoras e alugueis, também existe uma dashboard na tela
+          principal para ter uma visão geral do sistema. O sistema foi desenvolvido com os frameworks SpringBoot e Vue
+          JS e também foi utilizado o framework CSS Vuetify para estilização das telas. Obs: Este projeto também foi
+          feito com o React como treinamento para um projeto que fui alocado na empresa em que trabalho.
+        </p>
       </div>
-      <div class="modal-container bookstory">
-        <div class="modal modal-bookstory">
-          <div class="close-modal">
-            <button class="close-modal-bookstory">x</button>
-          </div>
-          <h1 class="modal-title">Locadora de livros (WEB)</h1>
-          <p class="modal-text">
-            Sistema de locação de livros onde o principal intuito é o controle e gerenciamento de alugueis, nesse
-            sistema existem alguns cruds, como de clientes, livros, editoras e alugueis, também existe uma dashboard na
-            tela principal para ter uma visão geral do sistema. O sistema foi desenvolvido com os frameworks SpringBoot
-            e Vue JS e também foi utilizado o framework CSS Vuetify para estilização das telas. Obs: Este projeto também
-            foi feito com o React como treinamento para um projeto que fui alocado na empresa em que trabalho.
-          </p>
-        </div>
+    </div>
+    <div class="scrollLinks">
+      <div class="goTop">
+        <a href="#topo" class="material-symbols-outlined">arrow_upward</a>
       </div>
-    </main>
-    <script src="smoothScroll.js"></script>
-    <script src="modal.js"></script>
+    </div>
+    <script src="js/smoothScrollTo.js"></script>
+    <script src="js/teste.js"></script>
+    <script src="js/modal.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

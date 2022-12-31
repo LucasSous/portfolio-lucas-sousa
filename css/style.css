@@ -1,9 +1,17 @@
 html {
-  background-image: url('./images/banner.png');
+  background-image: url('../images/banner.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.smooth-scroll-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  will-change: transform;
 }
 
 main {
@@ -196,7 +204,7 @@ nav a:hover {
   top: 0;
   left: 0;
   background-color: #00000080;
-  z-index: 2;
+  z-index: 60;
   display: grid;
   place-items: center;
   opacity: 0;
@@ -220,6 +228,7 @@ nav a:hover {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  z-index: 300;
 }
 
 .close-modal button {
@@ -360,6 +369,7 @@ form button:hover {
   border-radius: 50%;
   transition: 0.3s;
   opacity: 0;
+  z-index: 100;
 }
 
 .goTop:hover {
@@ -371,6 +381,7 @@ form button:hover {
   text-decoration: none;
   height: 100%;
   width: 100%;
+  border-radius: 50%;
   justify-content: center;
   display: flex;
   align-items: center;
