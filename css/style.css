@@ -181,20 +181,16 @@ nav a:hover {
   border: solid 1px var(--color-white);
 }
 
-.repository-buttom {
+.repository-button,
+.form-button {
   text-decoration: none;
-  color: var(--color-white);
   padding: 10px 20px;
+  color: black;
   margin-top: 50px;
-  border: 1px solid var(--color-white);
   border-radius: 4px;
   text-transform: uppercase;
-  transition: all 0.5s ease;
-}
-
-.repository-buttom:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  font-weight: 600;
+  background-color: var(--color-primary);
 }
 
 .modal-container {
@@ -328,23 +324,12 @@ form .text-field:focus {
   background-color: var(--color-dark-grey-hover);
 }
 
-form button {
-  padding: 10px 20px;
-  border: 1px solid var(--color-white);
-  background-color: transparent;
-  color: var(--color-white);
-  border-radius: 4px;
+.form-button {
+  border-radius: 6px;
   margin-top: 10px;
   font-size: 17px;
   cursor: pointer;
-  transition: all 0.4s;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-form button:hover {
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
+  border: none;
 }
 
 @keyframes float {
