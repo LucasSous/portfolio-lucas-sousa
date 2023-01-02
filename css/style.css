@@ -75,7 +75,6 @@ nav a:hover {
 }
 
 .presentation-buttom a:hover {
-  /* background-color: var(--color-dark-grey-hover); */
   box-shadow: 0 0 15px #0000005f;
 }
 
@@ -184,8 +183,8 @@ nav a:hover {
 .repository-button,
 .form-button {
   text-decoration: none;
+  color: var(--color-black);
   padding: 10px 20px;
-  color: black;
   margin-top: 50px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -327,9 +326,9 @@ form .text-field:focus {
 .form-button {
   border-radius: 6px;
   margin-top: 10px;
-  font-size: 17px;
   cursor: pointer;
   border: none;
+  font-size: 1rem;
 }
 
 @keyframes float {
